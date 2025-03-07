@@ -1,0 +1,121 @@
+<script setup>
+import image1 from '../assets/images/image1.png';
+
+import { ref, onMounted } from 'vue';
+import { supabase } from '../lib/supabaseClient';
+</script>
+
+
+<template>
+       <header class="text-center py-4">
+        <h1 class="text-neon">Welcome to My Portfolio</h1>
+    </header>
+
+    <main class="container">
+        <ul class="nav nav-tabs justify-content-center" id="portfolioTabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#background">Background</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#future-plans">My Future Plans</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-4">
+            <!-- About Me -->
+            <div id="about" class="tab-pane fade show active text-center">
+                <h2 class="text-neon">About Me</h2>
+                <img :src="image1" alt="About Me Image" class="img-fluid rounded shadow-lg">
+                <p>Hey, I am Jesmark David C. Presbitero, a student at Asia Pacific College pursuing a Bachelor of Science in Computer Science with a Specialization in Software Systems (BSCS-SS). I am currently 20 years old, in my second year, and from Lubao, Pampanga.</p>
+            </div>
+
+            <!-- Background -->
+            <div id="background" class="tab-pane fade text-center">
+                <h2 class="text-neon">My Background</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="image1" alt="Experience 1" class="img-fluid rounded shadow-lg">
+                    </div>
+                    <div class="col-md-4">
+                        <img ssrc="image1" alt="Experience 2" class="img-fluid rounded shadow-lg">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image1" alt="Experience 3" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+                <ul class="custom-list">
+                    <li><strong>Driving</strong><br><span>I have had extensive driving experience, including roles as an ambulance driver, emergency vehicle operator, and delivery driver.</span></li>
+                    <li><strong>Editing/Director</strong><br><span>Editing videos is one of my passions, allowing me to express creativity in storytelling.</span></li>
+                    <li><strong>Religious</strong><br><span>Faith has been a guiding force in my life, providing strength during difficult times.</span></li>
+                </ul>                
+            </div>
+
+            <!-- Future Plans -->
+            <div id="future-plans" class="tab-pane fade text-center">
+                <h2 class="text-neon">My Future Plans</h2>
+                <p>Life is a journey filled with dreams, challenges, and endless possibilities. Like everyone else, I have aspirations that I am determined to chase. My future plans revolve around continuous learning, pushing boundaries, and making a meaningful impact in the tech industry.</p>
+                <p>Success is not just about reaching a destination but about the perseverance and passion one puts into the journey. Whether it’s developing innovative software solutions, contributing to open-source projects, or inspiring others, I aim to keep moving forward.</p>
+                <p>Just like many people dream of building a career, traveling the world, or making a difference in their communities, I strive to grow, adapt, and embrace every opportunity that comes my way. My goal is to keep learning, improving, and turning my dreams into reality.</p>
+            </div>
+        </div>
+    </main>
+    <header class="text-center py-4">
+        <h1 class="text-neon">Welcome to My Portfolio</h1>
+    </header>
+
+    <main class="container">
+        <ul class="nav nav-tabs justify-content-center" id="portfolioTabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#background">Background</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#future-plans">My Future Plans</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-4">
+            <!-- About Me -->
+            <div id="about" class="tab-pane fade show active text-center">
+                <h2 class="text-neon">About Me</h2>
+                <img src="image1" alt="About Me Image" class="img-fluid rounded shadow-lg">
+                <p>Hey, I am Jesmark David C. Presbitero, a student at Asia Pacific College pursuing a Bachelor of Science in Computer Science with a Specialization in Software Systems (BSCS-SS). I am currently 20 years old, in my second year, and from Lubao, Pampanga.</p>
+            </div>
+
+            <!-- Background -->
+            <div id="background" class="tab-pane fade text-center">
+                <h2 class="text-neon">My Background</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="image1" alt="Experience 1" class="img-fluid rounded shadow-lg">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image1" alt="Experience 2" class="img-fluid rounded shadow-lg">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image1" alt="Experience 3" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+                <ul class="custom-list">
+                    <li><strong>Driving</strong><br><span>I have had extensive driving experience, including roles as an ambulance driver, emergency vehicle operator, and delivery driver.</span></li>
+                    <li><strong>Editing/Director</strong><br><span>Editing videos is one of my passions, allowing me to express creativity in storytelling.</span></li>
+                    <li><strong>Religious</strong><br><span>Faith has been a guiding force in my life, providing strength during difficult times.</span></li>
+                </ul>                
+            </div>
+
+            <!-- Future Plans -->
+            <div id="future-plans" class="tab-pane fade text-center">
+                <h2 class="text-neon">My Future Plans</h2>
+                <p>Life is a journey filled with dreams, challenges, and endless possibilities. Like everyone else, I have aspirations that I am determined to chase. My future plans revolve around continuous learning, pushing boundaries, and making a meaningful impact in the tech industry.</p>
+                <p>Success is not just about reaching a destination but about the perseverance and passion one puts into the journey. Whether it’s developing innovative software solutions, contributing to open-source projects, or inspiring others, I aim to keep moving forward.</p>
+                <p>Just like many people dream of building a career, traveling the world, or making a difference in their communities, I strive to grow, adapt, and embrace every opportunity that comes my way. My goal is to keep learning, improving, and turning my dreams into reality.</p>
+            </div>
+        </div>
+    </main>
+
+</template>
