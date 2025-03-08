@@ -1,5 +1,13 @@
 <script setup>
-import image1 from '../assets/images/image1.png';
+import image1 from '@/assets/images/image1.png';
+import image2 from '@/assets/images/image2.png';
+import image3 from '@/assets/images/image3.png';
+import image4 from '@/assets/images/image4.png';
+import image5 from '@/assets/images/image5.png';
+import image6 from '@/assets/images/image6.png';
+import image7 from '@/assets/images/image7.png';
+import image8 from '@/assets/images/image8.png';
+import image9 from '@/assets/images/image9.png';
 
 import { ref, onMounted } from 'vue';
 import { supabase } from '../lib/supabaseClient';
@@ -28,7 +36,7 @@ import { supabase } from '../lib/supabaseClient';
             <!-- About Me -->
             <div id="about" class="tab-pane fade show active text-center">
                 <h2 class="text-neon">About Me</h2>
-                <img :src="image1" alt="About Me Image" class="img-fluid rounded shadow-lg">
+                <img ::src="image1" alt="About Me Image" class="img-fluid rounded shadow-lg">
                 <p>Hey, I am Jesmark David C. Presbitero, a student at Asia Pacific College pursuing a Bachelor of Science in Computer Science with a Specialization in Software Systems (BSCS-SS). I am currently 20 years old, in my second year, and from Lubao, Pampanga.</p>
             </div>
 
@@ -37,13 +45,13 @@ import { supabase } from '../lib/supabaseClient';
                 <h2 class="text-neon">My Background</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="image1" alt="Experience 1" class="img-fluid rounded shadow-lg">
+                        <img ::src="image2" alt="Experience 1" class="img-fluid rounded shadow-lg">
                     </div>
                     <div class="col-md-4">
-                        <img ssrc="image1" alt="Experience 2" class="img-fluid rounded shadow-lg">
+                        <img ::src="image3" alt="Experience 2" class="img-fluid rounded shadow-lg">
                     </div>
                     <div class="col-md-4">
-                        <img src="image1" alt="Experience 3" class="img-fluid rounded shadow-lg">
+                        <img ::src="image4" alt="Experience 3" class="img-fluid rounded shadow-lg">
                     </div>
                 </div>
                 <ul class="custom-list">
@@ -83,7 +91,7 @@ import { supabase } from '../lib/supabaseClient';
             <!-- About Me -->
             <div id="about" class="tab-pane fade show active text-center">
                 <h2 class="text-neon">About Me</h2>
-                <img src="image1" alt="About Me Image" class="img-fluid rounded shadow-lg">
+                <img :src="image1" alt="About Me Image" class="img-fluid rounded shadow-lg">
                 <p>Hey, I am Jesmark David C. Presbitero, a student at Asia Pacific College pursuing a Bachelor of Science in Computer Science with a Specialization in Software Systems (BSCS-SS). I am currently 20 years old, in my second year, and from Lubao, Pampanga.</p>
             </div>
 
@@ -92,13 +100,13 @@ import { supabase } from '../lib/supabaseClient';
                 <h2 class="text-neon">My Background</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="image1" alt="Experience 1" class="img-fluid rounded shadow-lg">
+                        <img :src="image5" alt="Experience 1" class="img-fluid rounded shadow-lg">
                     </div>
                     <div class="col-md-4">
-                        <img src="image1" alt="Experience 2" class="img-fluid rounded shadow-lg">
+                        <img :src="image6" alt="Experience 2" class="img-fluid rounded shadow-lg">
                     </div>
                     <div class="col-md-4">
-                        <img src="image1" alt="Experience 3" class="img-fluid rounded shadow-lg">
+                        <img :src="image7" alt="Experience 3" class="img-fluid rounded shadow-lg">
                     </div>
                 </div>
                 <ul class="custom-list">

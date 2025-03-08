@@ -1,5 +1,5 @@
 body {
-  background: url('images/image (9).png') no-repeat center center fixed;
+  background: url('images/image9.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
   color: white;
@@ -13,7 +13,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('images/image (9).png') no-repeat center center fixed;
+  background: url('images/image9.png') no-repeat center center fixed;
   background-size: cover;
   filter: blur(10px); 
   z-index: -1;
